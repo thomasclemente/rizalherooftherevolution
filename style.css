@@ -325,6 +325,7 @@ header .nav-bar {
     background: var(--white-color);
     text-align: center;
     width: 100%;
+    min-height: 50vh;
 }
 
 .download-button {
@@ -348,6 +349,7 @@ header .nav-bar {
 .contact-section {
     padding: 50px 0 100px;
     background: light var(--light-pink-color);
+    min-height: 50vh;
 }
 
 .contact-section .section-content {
