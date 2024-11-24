@@ -11,10 +11,12 @@ menuCloseButton.addEventListener("click", () => menuOpenButton.click
 ());
 
 //download file
-function downloadFile() {
+function downloadFile(url, filename) {
     // Create a hidden link to trigger the download
-    var link = document.createElement('a');
-    link.href = 'https://drive.google.com/uc?export=download&id=1xFA-cXF8Y9beIHNFhaVqGXdBBMB3Nbw3'; // Your direct download URL
-    link.download = ''; // Optional: you can specify a filename here
+    const link = document.createElement('a');
+    link.href = url; // File URL
+    link.download = filename; // Desired filename
+    document.body.appendChild(link); // Append to the DOM
     link.click(); // Trigger the download
+    document.body.removeChild(link); // Remove the link for cleanup
 }
