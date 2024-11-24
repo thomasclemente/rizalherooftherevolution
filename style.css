@@ -455,12 +455,14 @@ header .nav-bar {
 }
 
 /*Footer Section*/
-.footer-section {
-    padding: 20px 0;
-    color: var(--white-color);
-    background: var(--dark-color);
-    display: flex;
-    align-items: center;
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 /*video*/
